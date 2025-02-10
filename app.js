@@ -41,6 +41,14 @@ app.get('/', (req, res) => {
     ];
 });
 
+// rotta bacheca
+
+app.get('/bacheca', (req, res) => {
+
+    res.send('Sono nella bacheca');
+
+});
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
