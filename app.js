@@ -7,6 +7,10 @@ const port = 3000;
 app.get('/', (req, res) => {
     res.send('Server del mio blog');
 
+    // accesso a public
+
+    app.use(express.static('public'));
+
     const posts = [
         {
             titolo: "Ricetta 1",
